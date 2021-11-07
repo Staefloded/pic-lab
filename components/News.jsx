@@ -13,7 +13,10 @@ export default function News({ news }) {
           />
 
           {news?.news_list?.map((item, idx) => (
-            <div className="flex items-start gap-20 w-full border-line pb-14" key={idx}>
+            <div
+              className="flex items-start gap-20 w-full border-line pb-14 2xl:pb-[70px]"
+              key={idx}
+            >
               <span className="text-xs opacity-40 flex-shrink-0 uppercase">
                 {new Intl.DateTimeFormat("en-US", {
                   year: "numeric",
@@ -26,7 +29,7 @@ export default function News({ news }) {
                 field={item["title"]}
                 components={{
                   heading3: (props) => (
-                    <h3 className="font-medium underline text-[19px]">{props.children}</h3>
+                    <h3 className="font-medium underline  text-[19px]">{props.children}</h3>
                   ),
                 }}
               />
