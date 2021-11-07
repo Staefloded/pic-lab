@@ -1,7 +1,6 @@
 import { PrismicRichText } from "@prismicio/react";
 
 export default function News({ news }) {
-  console.log(news);
   return (
     <div className="bg-news w-full h-screen bg-no-repeat bg-cover bg-top">
       <div className="flex items-center justify-start h-full px-[100px]">
