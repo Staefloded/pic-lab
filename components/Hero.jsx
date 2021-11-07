@@ -80,7 +80,7 @@ export default function Hero({ hero }) {
                 src={heroThree}
                 placeholder="blur"
               />
-              <Tags title="Water" bottom="-40%" right="38%" />
+              <Tags title="Water" bottom="-40%" right="25%" />
             </div>
           </div>
           <div className="absolute bottom-[7%] left-[11%] z-10">
