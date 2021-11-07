@@ -51,7 +51,7 @@ export default function Hero({ hero }) {
             layout="fill"
             objectFit="cover"
             objectPosition="top"
-            priority={true}
+            priority
           />
           <Tags title="Scenery" top="250px" right="-50px" />
 
@@ -64,6 +64,7 @@ export default function Hero({ hero }) {
                 objectFit="cover"
                 alt=""
                 src={heroOne}
+                priority
               />
               <Tags title="Person" top="30%" left="-20px" />
               <Tags title="Pencil" top="20%" right="-50%" />
@@ -79,6 +80,7 @@ export default function Hero({ hero }) {
                 alt=""
                 src={heroThree}
                 placeholder="blur"
+                priority
               />
               <Tags title="Water" bottom="-40%" right="25%" />
             </div>
@@ -93,6 +95,7 @@ export default function Hero({ hero }) {
                 alt=""
                 src={heroTwo}
                 placeholder="blur"
+                priority
               />
               <Tags title="Desk" top="20px" right="-20px" />
             </div>
