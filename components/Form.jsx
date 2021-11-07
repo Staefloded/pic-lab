@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Form() {
   const [text, setText] = useState("");
   return (
-    <div className="absolute w-full top-0">
+    <div className="fixed w-full bottom-5 z-50">
       <div className="rounded-[10px] max-w-[95%] w-full mx-auto  bg-white">
         <div className="flex items-center justify-between py-[10px] pl-[8px] pr-[30px]">
           <form className="border border-[#CDCDCD] rounded-lg flex items-center py-3 px-3">
@@ -12,7 +12,7 @@ export default function Form() {
             <input
               type="text"
               placeholder="Enter email"
-              className="text-sm font-inter border-r border-[#CDCDCD] mr-5 ml-3"
+              className="text-sm font-inter border-r font-medium text-secondary border-[#CDCDCD] mr-5 ml-3 p-1"
               onChange={(e) => setText(e.target.value)}
             />
             <button type="button" className="font-inter text-[13px] font-semibold text-secondary">
