@@ -3,7 +3,7 @@ import FeaturesItem from "./FeaturesItem";
 
 function Features({ features }) {
   return (
-    <div className="bg-primary h-screen w-full pt-5 md:pt-20 relative flex justify-between flex-col ">
+    <div className="bg-primary h-screen w-full pt-5 md:pt-20 relative flex justify-evenly md:justify-between flex-col ">
       <PrismicRichText
         field={features["features_title"]}
         components={{
