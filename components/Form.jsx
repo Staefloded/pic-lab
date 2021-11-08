@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Form() {
   const [text, setText] = useState("");
   return (
-    <div className="fixed w-full bottom-5 z-50">
+    <div className="fixed w-full bottom-5 z-50 md:block hidden">
       <div className="rounded-[10px] max-w-[95%] w-full mx-auto  bg-white">
         <div className="flex items-center justify-between py-[10px] pl-[8px] pr-[30px]">
           <form className="border border-[#CDCDCD] rounded-lg flex items-center py-3 px-3">

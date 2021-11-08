@@ -9,14 +9,14 @@ import Tags from "./Tags";
 export default function Hero({ hero }) {
   return (
     <div className="bg-primary h-screen w-full text-white">
-      <div className=" flex items-start justify-between pl-[68px] h-full relative  overflow-hidden">
-        <div className="flex flex-col min-h-full justify-around pb-20 flex-[0.3] overflow-hidden">
-          <div className="flex items-center">
+      <div className=" flex items-start justify-between flex-col md:flex-row  xl:pl-[68px] h-full relative  overflow-hidden">
+        <div className="flex flex-col min-h-full justify-around pb-20 px-5 md:flex-[0.5] lg:flex-[0.3] gap-5 overflow-hidden">
+          <div className="flex items-center overflow-hidden">
             <Image src="/logo.svg" alt="" width={18} height={40} />
             <span className="font-medium text-sm ml-5 font-idle leading-4">PICLAB</span>
           </div>
 
-          <div className="">
+          <div>
             <div className="uppercase text-[8px] font-medium border font-idle border-white p-1 rounded-md max-w-max mb-5">
               Coming Summer 2021
             </div>
@@ -43,7 +43,7 @@ export default function Hero({ hero }) {
           />
         </div>
 
-        <div className="flex-1 w-full relative h-full">
+        <div className="flex-1 w-full relative h-full hidden md:block">
           <Image
             src={heroimg}
             placeholder="blur"

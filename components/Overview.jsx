@@ -5,7 +5,7 @@ import Tags from "./Tags";
 export default function Overview({ overview }) {
   return (
     <div className="bg-overview w-full h-[100vh] bg-no-repeat bg-cover">
-      <div className="pt-[100px] h-full w-full relative">
+      <div className="sm:pt-[100px] h-full w-full relative flex items-center justify-center sm:block px-5">
         <Tags title="Pencils" top="33%" left="-65px" />
         <Tags title="Person" bottom="33%" left="6%" />
         <Tags title="Desk" bottom="45%" left="11%" />
@@ -13,7 +13,7 @@ export default function Overview({ overview }) {
         <Tags title="Pencils" bottom="43%" right="44%" />
         <Tags title="Scenery" bottom="30%" right="35%" />
 
-        <div className="bg-white rounded-[9px] shadow-2xl absolute right-20 top-32 px-[35px] py-[25px] max-w-[340px] w-full">
+        <div className="bg-white rounded-[9px] shadow-2xl relative sm:absolute sm:right-20 sm:top-32 px-[35px] py-[25px] max-w-[340px] w-full z-30">
           <span className="text-primary-one font-inter font-normal text-xs">
             {overview?.overview_category}
           </span>
@@ -34,7 +34,7 @@ export default function Overview({ overview }) {
             }}
           />
 
-          <div className="w-full text-center py-[70px]">
+          <div className="w-full text-center py-[70px] ">
             <Image src={overview?.overview_image?.url} alt="" width={103} height={89} />
           </div>
 
