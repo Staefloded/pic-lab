@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function FeaturesItem({ data }) {
   return (
-    <div className="bg-white max-w-lg w-full rounded-[14px] pt-[32px] flex-shrink-0">
-      <div className="px-5 sm:pl-[37px] mb-14 max-w-sm">
+    <div className="bg-white max-w-lg w-full rounded-[14px] pt-[32px] flex-shrink-0 h-full min-h-[510px]">
+      <div className="px-5 sm:pl-[37px] mb-14 max-w-sm ">
         <span className="text-primary-one font-inter font-normal text-xs">{data?.category}</span>
 
         <PrismicRichText
